@@ -78,8 +78,7 @@ namespace Model
         public bool Load()
         {
             if (!System.IO.File.Exists(storeFileName)) return false;
-            try {// when renaming something in xml
-                // AppSettings -> appSettings beta 1.0.0.0-1.0.0.2 -> 1.0.0.3
+            try {
                 System.IO.File.WriteAllText(storeFileName,System.IO.File.ReadAllText(storeFileName)
                     .Replace("<AppSettings", "<appSettings").Replace("AppSettings>", "appSettings>"));
             } catch { }

@@ -66,7 +66,7 @@ namespace View.Components
 
         public void OpenGitHubSite()
         {
-            System.Diagnostics.Process.Start("https://github.com/grigory-lobkov/rtsp-camera-view");
+            System.Diagnostics.Process.Start("https://github.com/mohammadkhanjani/FaraDid");
             githubLinkLabel.LinkVisited = true;
         }
 

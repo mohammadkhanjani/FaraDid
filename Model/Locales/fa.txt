@@ -1,0 +1,141 @@
+﻿##### Main
+
+# Control panel tab names
+Main/sourcesPage = منابع
+Main/settingsPage = تنظیمات
+
+# Question to add some examples
+Main/AskAddSamples = آیا میخواهید دوربین های پیش فرض و نمونه به منابع اضافه شود؟
+
+# Error messages
+Main/CreateGridCommonError = خطا در ایجاد گرید
+Main/CreateGridNoLibError = Can't find VLC and/or ActiveX Web-plugin installed
+Main/CreateGridBadVerError = لطفا ورژن vlc خود را بررسی کنید می بایست 2.1. به بالا باشد
+Main/CreateGridEndError = Please, install VLC 2.1.x with ActiveX Web-module to the default\ninstallation folder ''Program Files (x86)'' or ''Program Files''\n\nYou can download VLC here:\n{url}\n\nWould you like to download VLC now?
+
+# Settings file errors
+Main/SettingsSaveError = خطا در ذخیره فایل تنظیمات
+Main/SettingsLoadError = خطا در بارگذاری فایل تنظیمات
+Main/SettingsAccesError = خطا در دسترسی به فایل تنظیمات، تنظماتی حاضر شما قادر به ذخیره سازی نمی باشد
+
+# Hint messages
+Main/hintOpenCtrl = Open control panel to Add/View\navailable cameras
+Main/hintAddCamera = در این قسمت راست کلیک کنید تا بتوانید دوربین جدید را اضافه کنید
+Main/hintDropCamera = یکی از دوربین ها را انتخاب و آن را  روی یکی از خانه های خالی گرید بی اندازید تا نمایش داده شود
+Main/hintRTSP1 = لینک برای اتصال صحیح نیست
+Main/hintRTSP2 = لینک صحیح است \n اتصال با دوربین برقرار شد
+
+# Context menu
+Main/fullScreenMenuItem = حالت تمام صفحه
+Main/exitFullScreenMenuItem = خارج شدن از حالت تمام صفحه
+
+
+
+##### SourceList
+
+# Typeview submenu
+SourceList/typeViewToolStripMenuItem = نوع نمایش
+SourceList/largeIconsToolStripMenuItem = آیکون های سایز بزرگ
+SourceList/smallIconsToolStripMenuItem = آیکون های سایز کوچک
+SourceList/largeListToolStripMenuItem = لیست بزرگ
+SourceList/smallListToolStripMenuItem = لیست کوچک
+
+# Sort submenu
+SourceList/sortTypeToolStripMenuItem = مرتب سازی
+SourceList/ascendingToolStripMenuItem = صعودی
+SourceList/descendingToolStripMenuItem = نزولی
+SourceList/disabledToolStripMenuItem = غیر فعال
+
+# Actions
+SourceList/newCameraToolStripMenuItem = اضافه کردن دوربین
+SourceList/modifyCameraToolStripMenuItem = ویرایش دوربین
+
+
+
+##### ModifySettings
+
+ModifySettings/camNameViewGlbButton = نمایش نام دوربین
+ModifySettings/alertSetupButton = کنترل هشدار
+ModifySettings/matrixSetupButton = ابعاد ماتریس نمایش
+
+
+
+##### ModifySource
+
+ModifySource/camNameLabel = نام دوربین
+ModifySource/camName = Place of mount, view area, e.t.c.
+ModifySource/camNameShow = نمایش
+ModifySource/camNameInherit = ارث بری از تنظیمات پیش فرض
+ModifySource/camNameModify = ویرایش...
+ModifySource/camEditRtsp1Label = لینک اتصال با کیفیت پایین
+ModifySource/rtspBad = در اینجا لینکی که میخواهید در صورت کاهش کیفیت اتصال با آن برقرار شود را قرار دهید
+ModifySource/camEditRtsp2Label = لینک اتصال با کیفیت خوب
+ModifySource/rtspGood = در اینجا لینکی که میخواهید در صورت کیفیت بالا اتصال با آن برقرار شود را قرار دهید
+ModifySource/camEditIconLabel = آیکون دوربین
+ModifySource/aspectRatioLabel = نسبت نمایش
+ModifySource/aspectRatio = 
+ModifySource/createCamButton = ایجاد
+ModifySource/saveCamButton = ذخیره
+ModifySource/cancelCamButton = لغو
+ModifySource/delCamLabel = حذف دوربین
+ModifySource/cameraDeleteConfirm1 = آیا واقعا می خواهید که دوربین را حذف نمایید
+ModifySource/cameraDeleteConfirm2 = شما در حال تماشا این دوربین هستید آیا مطمئن هستید؟
+
+
+
+##### NameViewSetup
+
+NameViewSetup/this = تنظیمات نمایش نام دوربین راه اندازی شد
+NameViewSetup/positioningLabel = مکان قرار گیری متن
+NameViewSetup/camNameLabel = نام دوربین
+NameViewSetup/textColorLabel = رنگ متن
+NameViewSetup/backgroundCheckBox = پس زمینه
+NameViewSetup/textSizeLabel = اندازه متن
+NameViewSetup/autoHideCheckBox = پنهان سازی خودکار
+NameViewSetup/okButton = باشه
+NameViewSetup/cancelButton = لغو
+
+
+
+##### SourceGrid
+
+SourceGrid/EmailOnLostSignalTitle = {name} LOST link
+SourceGrid/EmailOnLostSignalSubject = Signal of {name} is lost\n\nBad stream url:\n{bad}\n\nGood stream url:\n{good}\n\n
+SourceGrid/EmailOnRestoreSignalTitle = {name} recovered link
+SourceGrid/EmailOnRestoreSignalSubject = Signal of {name} is recovered\n\nBad stream url:\n{bad}\n\nGood stream url:\n{good}\n\n
+
+
+
+##### MatrixSetup
+
+MatrixSetup/this = شخصی سازی ماتریس نمایش
+MatrixSetup/joinButton = پیوستن
+MatrixSetup/splitButton = جدا کردن
+MatrixSetup/saveButton = ذخیره
+MatrixSetup/cancelButton = لغو
+
+
+
+##### AlertSetup
+
+# Email page
+AlertSetup/emailPage = ایمیل
+AlertSetup/emLostCheckBox = حداقل زمان مورد نیاز برای قطع اتصال( به دقیقه)
+AlertSetup/emRecoverCheckBox = زمانی که اتصال مجدد برقرار می شود
+AlertSetup/emToLabel = به
+AlertSetup/emFromLabel = از
+
+# Mail server setup
+AlertSetup/emServerGroupBox = سرور ایمیل
+AlertSetup/emNameLabel = نام
+AlertSetup/emPortLabel = پورت
+AlertSetup/emTestLinkLabel = ارسال یک نامه تستی
+AlertSetup/emUsernameLabel = نام کاربری
+AlertSetup/emPasswordLabel = کلمه عبور
+
+# Common
+AlertSetup/this = هشدار قطع اتصال جریان راه اندازی شد
+AlertSetup/okButton = باشه
+AlertSetup/cancelButton = لغو
+AlertSetup/testTitle = تست هشدار
+AlertSetup/testText = تبریک! \n تنظیمات شما بارگذاری شد

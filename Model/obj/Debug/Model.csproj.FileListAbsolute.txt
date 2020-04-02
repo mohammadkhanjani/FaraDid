@@ -3,3 +3,8 @@ C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\rtsp-camera-view-master\Mode
 C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\rtsp-camera-view-master\Model\bin\Debug\Model.pdb
 C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\rtsp-camera-view-master\Model\obj\Debug\Model.dll
 C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\rtsp-camera-view-master\Model\obj\Debug\Model.pdb
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Model\bin\Debug\Locales\en.txt
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Model\bin\Debug\Model.dll
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Model\bin\Debug\Model.pdb
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Model\obj\Debug\Model.dll
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Model\obj\Debug\Model.pdb

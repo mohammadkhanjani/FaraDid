@@ -6,64 +6,37 @@
   <autoplay>1</autoplay>
   <priority>-1</priority>
   <unmute>0</unmute>
-  <controlPanelWidth>240</controlPanelWidth>
+  <controlPanelWidth>250</controlPanelWidth>
   <camListView>1</camListView>
   <camListSort>3</camListSort>
   <matrix>
     <cntX>2</cntX>
     <cntY>2</cntY>
-    <joins>
-      <join>
-        <x>-1</x>
-        <y>0</y>
-        <w>2</w>
-        <h>1</h>
-      </join>
-    </joins>
+    <joins />
   </matrix>
   <nameView>
     <enabled>true</enabled>
     <inheritGlobal>true</inheritGlobal>
-    <position>BottomLeft</position>
-    <size>4</size>
+    <position>BottomCenter</position>
+    <size>5</size>
     <autoHide>false</autoHide>
-    <autoHideSec>6</autoHideSec>
+    <autoHideSec>4</autoHideSec>
     <paintBg>true</paintBg>
-    <color>-16777216</color>
-    <bgColor>-128</bgColor>
+    <color>-1</color>
+    <bgColor>-14513374</bgColor>
   </nameView>
   <alert>
     <email>
       <whenDissapearMin>30</whenDissapearMin>
       <serverUrl>gmail.com</serverUrl>
       <serverPort>587</serverPort>
-      <emailFrom>noreply-alert@rtsp-camera-view.app</emailFrom>
-      <emailTo />
+      <emailFrom>IdeBartarNovinIranFaraDid@gmail.com</emailFrom>
+      <emailTo>Mohammadengkhanjanni@gmail.com</emailTo>
       <authUser />
       <authPassword />
       <onSignalLost>0</onSignalLost>
       <onSignalRecover>0</onSignalRecover>
     </email>
   </alert>
-  <cams>
-    <cam>
-      <name>test</name>
-      <rtspBad>rtsp://root:root@192.168.1.114/axis-media/media.amp?videocodec=h264&amp;resolution=800x450&amp;fps=8&amp;videokeyframeinterval=9&amp;compression=50</rtspBad>
-      <rtspGood>rtsp://root:root@192.168.1.114/axis-media/media.amp?videocodec=h264&amp;resolution=800x450&amp;fps=8&amp;videokeyframeinterval=9&amp;compression=50</rtspGood>
-      <aspectRatio>16:9</aspectRatio>
-      <camIcon>1</camIcon>
-      <position>1</position>
-      <nameView>
-        <enabled>true</enabled>
-        <inheritGlobal>true</inheritGlobal>
-        <position>BottomCenter</position>
-        <size>5</size>
-        <autoHide>false</autoHide>
-        <autoHideSec>4</autoHideSec>
-        <paintBg>true</paintBg>
-        <color>-1</color>
-        <bgColor>-14513374</bgColor>
-      </nameView>
-    </cam>
-  </cams>
+  <cams />
 </appSettings>

@@ -50,6 +50,9 @@ namespace View
             fullScreenMenuItem.Click += (sender, args) => DoFullscreen();
             exitFullScreenMenuItem.Click += (sender, args) => ExitFullscreen();
             exitFullScreenMenuItem.Visible = false;
+
+            //LoadFont();
+            //this.Font = GetFontDataAsMediaFont(FontEnum.BYekan);
         }
 
         public new void Show()
@@ -417,6 +420,112 @@ namespace View
             hideHintTimer.Enabled = false;
             Invoke(HideHintTimer);
         }
+
+        public enum FontEnum
+        {
+            BNazanin = 0,
+            BTitr = 1,
+            BYekan = 2,
+            BZar = 3
+        }
+        public static System.Drawing.Text.PrivateFontCollection _fonts { get; set; }
+
+        private static bool bInitialized = false;
+
+        public static void LoadFont()
+        {
+            if (bInitialized)
+                return;
+            try
+            {
+                string[] tempFiles = System.IO.Directory.GetFiles(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Fonts"), "*.ttf");
+                if (tempFiles != null)
+                {
+                    foreach (var filePath in tempFiles)
+                    {
+                        if (System.IO.File.Exists(filePath))
+                        {
+                            using (System.IO.FileStream fonstStream =
+                                /*System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(filePath)*/
+                                new System.IO.FileStream(filePath, System.IO.FileMode.Open, System.IO.FileAccess.Read))
+                            {
+                                if (fonstStream != null)
+                                {
+                                    IntPtr data = IntPtr.Zero;
+                                    try
+                                    {
+                                        if (_fonts == null)
+                                            _fonts = new System.Drawing.Text.PrivateFontCollection();
+                                        data = System.Runtime.InteropServices.Marshal.AllocCoTaskMem((int)fonstStream.Length);
+                                        byte[] fontData = new byte[fonstStream.Length];
+                                        fonstStream.Read(fontData, 0, (int)fonstStream.Length);
+                                        System.Runtime.InteropServices.Marshal.Copy(fontData, 0, data, (int)fonstStream.Length);
+                                        _fonts.AddMemoryFont(data, (int)fonstStream.Length);
+                                    }
+                                    finally
+                                    {
+                                        if (data != IntPtr.Zero)
+                                            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(data);
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Couldn't find font path : {filePath= " + filePath + "}");
+                        }
+                    }
+                }
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show("LoadFont : {Error= " + ex.Message + "}");
+            }
+
+            bInitialized = true;
+        }
+
+        public static System.Drawing.FontFamily GetFontData(FontEnum fontName = FontEnum.BNazanin)
+        {
+            if (_fonts != null)
+            {
+                foreach (var item in _fonts.Families)
+                {
+                    if (item.Name.ToLower().Trim().Replace(" ", "").Equals(fontName.ToString().ToLower().Trim().Replace(" ", "")))
+                        return item;
+                }
+            }
+            return new System.Drawing.Font("Tahoma", 10).FontFamily;
+        }
+
+        public static Font GetFontDataAsMediaFont(FontEnum fontName = FontEnum.BNazanin)
+        {
+            if (_fonts != null)
+            {
+                var height = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height;
+                var width = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
+
+                FontEnum adaptableFont = fontName;
+
+                if (width >= 1366 && height >= 768)
+                {
+                    adaptableFont = FontEnum.BYekan;
+                }
+                foreach (var item in _fonts.Families)
+                {
+                    if (item.Name.ToLower().Trim().Replace(" ", "").Equals(adaptableFont.ToString().ToLower().Trim().Replace(" ", "")))
+                    {
+                        return new Font(
+                           new FontFamily(item.Name),
+                           13,
+                           FontStyle.Regular,
+                           GraphicsUnit.Pixel);
+                    }
+                }
+            }
+            return new Font("Tahoma", 10);
+        }
+
 
         // Localization
         public string SourcesPageText { set { if (value != "") sourcesPage.Text = value; } }

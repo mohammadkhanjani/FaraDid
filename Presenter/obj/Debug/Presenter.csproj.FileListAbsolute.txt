@@ -8,3 +8,13 @@ C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\rtsp-camera-view-master\Pres
 C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\rtsp-camera-view-master\Presenter\bin\Debug\Model.pdb
 C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\rtsp-camera-view-master\Presenter\obj\Debug\Presenter.dll
 C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\rtsp-camera-view-master\Presenter\obj\Debug\Presenter.pdb
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\bin\Debug\Locales\en.txt
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\bin\Debug\Presenter.dll
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\bin\Debug\Presenter.pdb
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\bin\Debug\Model.dll
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\bin\Debug\Model.pdb
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\obj\Debug\Presenter.csprojResolveAssemblyReference.cache
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\obj\Debug\Presenter.Properties.Resources.resources
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\obj\Debug\Presenter.csproj.GenerateResource.Cache
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\obj\Debug\Presenter.dll
+C:\Users\m.khanjani\Desktop\rtsp-camera-view-master\FaraDidLiveViewer\Presenter\obj\Debug\Presenter.pdb

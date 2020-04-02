@@ -1,5 +1,4 @@
-﻿
-##### Main
+﻿##### Main
 
 # Control panel tab names
 Main/sourcesPage = Sources
